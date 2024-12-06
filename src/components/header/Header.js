@@ -22,7 +22,7 @@ const Header = (props) => {
 
     const openWhatsApp = () => {
         const phoneNumber = '905373711654'; // Your WhatsApp number with country code
-        const message = encodeURIComponent('Merhaba! Size nasıl yardımcı olabilirim?');
+        const message = encodeURIComponent('Merhaba! Hizmetleriniz hakkında bilgi alabilir miyim?');
         const whatsappURL = `https://wa.me/${phoneNumber}?text=${message}`;
         window.open(whatsappURL, '_blank'); // Open WhatsApp link in new tab
     };
@@ -41,7 +41,7 @@ const Header = (props) => {
                             <div className="col-lg-2 col-md-6 col-6">
                                 <div className="navbar-header">
                                     <Link onClick={ClickHandler} className="navbar-brand" to="/home">
-                                        <img src={Logo} alt="logo" />
+                                        <img src={Logo} alt="logo" style={{ maxWidth: '180px', height: 'auto' }} /> {/* Logo daha küçük */}
                                     </Link>
                                 </div>
                             </div>
@@ -75,7 +75,14 @@ const Header = (props) => {
                                 </div>
                             </div>
                             <div className="col-lg-1 col-md-2 col-2">
-                                <div className="whatsapp-icon" onClick={openWhatsApp} style={{ cursor: 'pointer' }}>
+                                <div
+                                    className="whatsapp-icon"
+                                    onClick={openWhatsApp}
+                                    style={{
+                                        cursor: 'pointer',
+                                        transform: 'scale(0.6)', // WhatsApp ikonunu büyütme
+                                    }}
+                                >
                                     <img src={WhatsAppIcon} alt="WhatsApp" />
                                 </div>
                             </div>
