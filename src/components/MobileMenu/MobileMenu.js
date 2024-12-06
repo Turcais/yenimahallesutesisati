@@ -20,12 +20,19 @@ const menus = [
         link: '/service-s2',
        
     },
+    {
+        id: 7,
+        title: 'Hakkımızda',
+        link: '/about',
+       
+    },
     
     {
         id: 88,
         title: 'İletişim',
         link: '/contact',
     }
+    
 
 
 ]
