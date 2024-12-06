@@ -22,7 +22,7 @@ const Header = (props) => {
 
     const openWhatsApp = () => {
         const phoneNumber = '905373711654'; // Your WhatsApp number with country code
-        const message = encodeURIComponent('Merhaba! Size nasıl yardımcı olabilirim?');
+        const message = encodeURIComponent('Merhaba! Hizmetleriniz hakkında bilgi alabilir miyim?');
         const whatsappURL = `https://wa.me/${phoneNumber}?text=${message}`;
         window.open(whatsappURL, '_blank'); // Open WhatsApp link in new tab
     };
