@@ -33,7 +33,7 @@ const Hero = () => {
                                     <h2>Su Kaçağı Tespiti</h2>
                                 </div>
                                 <div className="slide-text">
-                                    <p>Evinizde yada ofisinizde tesisatlarda su kaçağı oluşması durumunda hemen firmamızı arayabilirsiniz. Robot cihazla noktasal olarak su kaçaklarını bulmaktayız(world).</p>
+                                    <p>Evinizde yada ofisinizde tesisatlarda su kaçağı oluşması durumunda hemen firmamızı arayabilirsiniz. Robot cihazla noktasal olarak su kaçaklarını bulmaktayız.</p>
                                 </div>
                                 <div className="clearfix"></div>
                                 <div className="slide-btns">
