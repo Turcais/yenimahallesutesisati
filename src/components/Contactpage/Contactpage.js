@@ -15,12 +15,12 @@ const Contactpage = () => {
                                     <div className="office-info-item">
                                         <div className="office-info-icon">
                                             <div className="icon">
-                                                <i className="fi flaticon-placeholder"></i>
+                                                <i className="fi flaticon-placeholder" ></i>
                                             </div>
                                         </div>
                                         <div className="office-info-text">
-                                            <h2>Adresimiz</h2>
-                                            <p>Ragıp Tüzün, Serdar Sk. No:139/B, 06170 Yenimahalle/Ankara</p>
+                                            <h2 href='https://maps.app.goo.gl/mj5SCrLzXcz1xbfK7' >Adresimiz</h2>
+                                            <a href='https://maps.app.goo.gl/mj5SCrLzXcz1xbfK7'>Ragıp Tüzün, Serdar Sk. No:139/B, 06170 Yenimahalle/Ankara</a>
                                         </div>
                                     </div>
                                 </div> 
@@ -32,8 +32,9 @@ const Contactpage = () => {
                                             </div>
                                         </div>
                                         <div className="office-info-text">
-                                            <h2>Email Atın</h2>
+                                            <h2 mailto>Email Atın</h2>
                                             <p>gorkemtesisat06@gmail.com</p>
+                                            <p>tesisatgorkem@gmail.com</p>
                                         </div>
                                     </div>
                                 </div> 
@@ -46,7 +47,9 @@ const Contactpage = () => {
                                         </div>
                                         <div className="office-info-text">
                                             <h2>Şimdi Arayın</h2>
-                                            <p>+90 537 371 16 54</p>
+                                            <a href="tel:00905373711654">
+                                                +(90) 537 371 16 54
+                                            </a>
                                         </div>
                                     </div>
                                 </div> 
@@ -64,7 +67,7 @@ const Contactpage = () => {
             </div> 
             <section className="wpo-contact-map-section">
                 <div className="wpo-contact-map">
-                    <iframe title='comtact-map' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6115.89693113241!2d32.80935897135415!3d39.96490489121581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d34ead3639e19f%3A0x87860931ff5fab86!2sAsil%20Emlak!5e0!3m2!1str!2str!4v1733431899699!5m2!1str!2str"></iframe>
+                    <iframe title='comtact-map' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12231.797975680382!2d32.7986083173828!3d39.9648819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d34fbd5a121b1f%3A0x7d872e5d47377ee9!2sG%C3%B6rkem%20Su%20Tesisat!5e0!3m2!1str!2str!4v1733618271517!5m2!1str!2str"></iframe>
                 </div>
             </section>
         </section>

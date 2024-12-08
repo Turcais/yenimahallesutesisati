@@ -105,6 +105,7 @@ const PillarsSection = (props) => {
                 <div className="row justify-content-center">
                     <div className="col-lg-6 col-md-8 col-12">
                         <div className="section-title">
+                            <h2></h2>
                             <h2>Hizmetlerimiz</h2>
                             <h4>Hizmetlerimizin Detaylari Için WhatsApp Üzerinden Iletişime Geçebilirsiniz</h4>
                         </div>

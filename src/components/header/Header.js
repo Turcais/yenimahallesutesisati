@@ -6,7 +6,9 @@ import { totalPrice } from '../../utils';
 import { connect } from 'react-redux';
 import { removeFromCart } from '../../store/actions/action';
 import sIcon from '../../images/add-to-cart.svg';
-import WhatsAppIcon from '../../images/whatsapp-icon.svg'; // WhatsApp icon path
+import WhatsAppIcon from '../../images/whatsapp-icon.svg'; 
+import PhoneIcon from '../../images/phone.png'; 
+import Contactin from '../hero/contact';
 
 const Header = (props) => {
     const [menuActive, setMenuState] = useState(false);
@@ -74,18 +76,7 @@ const Header = (props) => {
                                     </ul>
                                 </div>
                             </div>
-                            <div className="col-lg-1 col-md-2 col-2">
-                                <div
-                                    className="whatsapp-icon"
-                                    onClick={openWhatsApp}
-                                    style={{
-                                        cursor: 'pointer',
-                                        transform: 'scale(0.6)', // WhatsApp ikonunu büyütme
-                                    }}
-                                >
-                                    <img src={WhatsAppIcon} alt="WhatsApp" />
-                                </div>
-                            </div>
+                          <Contactin></Contactin>
                         </div>
                     </div>
                 </nav>

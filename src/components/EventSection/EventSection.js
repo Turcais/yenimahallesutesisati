@@ -5,8 +5,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import TimeCountDown from "../countdown";
-import icon1 from "../../images/event/time.svg";
-import icon2 from "../../images/event/pin.svg";
+import { colors } from "@mui/material";
+
 
 
 const ClickHandler = () => {
@@ -19,7 +19,8 @@ const settings = {
     fade: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true, // Otomatik kayma özelliği aktif
+    autoplaySpeed: 5000, // Her 3 saniyede bir kayar
 };
 
 
@@ -30,8 +31,7 @@ const EventSection = (props) => {
                 <div className="row justify-content-center">
                     <div className="col-lg-6 col-md-8 col-12">
                         <div className="section-title">
-                            <h2>Our Event</h2>
-                            <h3>Our Upcoming Events</h3>
+                            <h3>Hizmet Politikamiz</h3>
                         </div>
                     </div>
                 </div>
@@ -46,15 +46,11 @@ const EventSection = (props) => {
                                 </div>
                                 <div className="content-wrap">
                                     <div className="content">
-                                        <h2 className="title"><Link onClick={ClickHandler} to={`/event-single/${event.slug}`}>{event.title}</Link></h2>
-                                        <ul>
-                                            <li><img src={icon1} alt="icon" /> {event.date} @ {event.time} </li>
-                                            <li><img src={icon2} alt="icon" />{event.location}</li>
-                                        </ul>
-                                        <div className="event-date">
-                                            <TimeCountDown />
-                                        </div>
-                                        <Link onClick={ClickHandler} to={`/event-single/${event.slug}`} className="theme-btn">Join Now</Link>
+                                        <h3 className="title">{event.title}</h3>
+                                        
+                                        <p style={{ color: 'black', fontSize: '20px', fontWeight: 'bold' }}>{event.text}</p>
+                                          
+                                        <Link onClick={ClickHandler} to={`/event-single/${event.slug}`}></Link>
                                     </div>
                                 </div>
                             </div>

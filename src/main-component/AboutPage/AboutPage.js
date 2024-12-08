@@ -7,6 +7,7 @@ import ServiceSection from '../../components/ServiceSection/ServiceSection';
 import Scrollbar from '../../components/scrollbar/scrollbar'
 import Footer from '../../components/footer/Footer';
 import PrayerTime from '../../components/PrayerTime/PrayerTime';
+import EventSection from '../../components/EventSection/EventSection';
 
 const AboutPage = () => {
     return (
@@ -14,7 +15,9 @@ const AboutPage = () => {
             <Navbar />
             <PageTitle pageTitle={'Hakkımızda'} pagesub={'About'} />
             <About/>
+            <EventSection/>
             <PillarsSection/>
+            
             <ServiceSection/>
             <PrayerTime/>
             <Footer/>

@@ -17,6 +17,7 @@ const HomePage = () => {
             <Navbar hclass={'wpo-header-style-4'} />
             <Hero />
             <About />
+            <EventSection/>
             <PillarsSection />
             <ServiceSection />
             

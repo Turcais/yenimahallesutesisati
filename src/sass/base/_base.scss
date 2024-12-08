@@ -260,6 +260,53 @@ img{
   z-index: 99999 !important;
 }
 
+.header-icons {
+    position: fixed;
+    top: 5px;
+    left: 1500px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000; /* Üstte görünmesini sağlar */
+}
 
+.whatsapp-icon img,
+.phone-icon img {
+    width: 40px; /* İkon boyutu */
+    height: 40px;
+    cursor: pointer;
+}
+
+/* Mobil cihazlar için */
+@media (max-width: 768px) {
+    .header-icons {
+        top: auto;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        flex-direction: row;
+    }
+
+    .whatsapp-icon img,
+    .phone-icon img {
+        width: 50px; /* Mobil için ikon boyutunu artırabilirsiniz */
+        height: 50px;
+    }
+}
+@media (max-width: 1500px) {
+    .header-icons {
+        top: auto;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        flex-direction: row;
+    }
+
+    .whatsapp-icon img,
+    .phone-icon img {
+        width: 50px; /* Mobil için ikon boyutunu artırabilirsiniz */
+        height: 50px;
+    }
+}
 
 

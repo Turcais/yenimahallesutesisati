@@ -1,6 +1,7 @@
 import React from "react";
-import { Navigation, A11y } from 'swiper';
+import { Navigation, A11y, Autoplay} from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
+
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { Link } from 'react-router-dom'
@@ -17,13 +18,17 @@ const Hero = () => {
         <section className="hero-slider hero-style-1">
             <Swiper
                 // install Swiper modules
-                modules={[Navigation, A11y]}
+                modules={[Navigation, A11y, Autoplay]}
                 spaceBetween={0}
                 slidesPerView={1}
                 loop={true}
                 speed={1800}
                 parallax={true}
                 navigation
+                autoplay={{
+                    delay: 5000, // 5 saniye
+                    disableOnInteraction: false, // Kullanıcı müdahalesinden sonra da devam et
+                }}
             >
                 <SwiperSlide>
                     <div className="slide-inner slide-bg-image" style={{ backgroundImage: `url(${hero1})` }}>
@@ -33,7 +38,7 @@ const Hero = () => {
                                     <h2>Su Kaçağı Tespiti</h2>
                                 </div>
                                 <div className="slide-text">
-                                    <p>Evinizde yada ofisinizde tesisatlarda su kaçağı oluşması durumunda hemen firmamızı arayabilirsiniz. Robot cihazla noktasal olarak su kaçaklarını bulmaktayız(world).</p>
+                                    <p>Evinizde yada ofisinizde tesisatlarda su kaçağı oluşması durumunda hemen firmamızı arayabilirsiniz. Robot cihazla noktasal olarak su kaçaklarını bulmaktayız.</p>
                                 </div>
                                 <div className="clearfix"></div>
                                 <div className="slide-btns">
