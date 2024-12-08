@@ -67,7 +67,7 @@ const Contactpage = () => {
             </div> 
             <section className="wpo-contact-map-section">
                 <div className="wpo-contact-map">
-                    <iframe title='comtact-map' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12231.797975680382!2d32.7986083173828!3d39.9648819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d34fbd5a121b1f%3A0x7d872e5d47377ee9!2sG%C3%B6rkem%20Su%20Tesisat!5e0!3m2!1str!2str!4v1733618271517!5m2!1str!2str"></iframe>
+                    <iframe title='comtact-map' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d391778.92380121385!2d32.6729708527523!3d39.90171788483986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d34fbd5a121b1f%3A0x7d872e5d47377ee9!2sG%C3%B6rkem%20Su%20Tesisat!5e0!3m2!1str!2str!4v1733619609097!5m2!1str!2str"></iframe>
                 </div>
             </section>
         </section>
